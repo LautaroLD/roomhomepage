@@ -73,7 +73,7 @@ header .list li a,
 header .list-desktop li a {
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: black;
 }
 header .list-desktop {
@@ -81,7 +81,6 @@ header .list-desktop {
 }
 
 .sections {
-  max-width: 100vw;
   z-index: 0;
 }
 .sections picture {
@@ -92,7 +91,34 @@ header .list-desktop {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.sections picture div {
+.sections .text-container {
+  display: grid;
+  grid-template-rows: auto;
+  padding: 20px 30px;
+  gap: 20px;
+}
+.sections .text-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+.sections .text-container p {
+  font-size: 1.2rem;
+  color: #454545;
+  font-weight: 500;
+}
+
+.first-section .back-img1 {
+  background-image: url("../images/mobile-image-hero-1.jpg");
+}
+.first-section .back-img2 {
+  background-image: url("../images/mobile-image-hero-2.jpg");
+}
+.first-section .back-img3 {
+  background-image: url("../images/mobile-image-hero-3.jpg");
+}
+.first-section #picture div {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -102,68 +128,54 @@ header .list-desktop {
   width: -webkit-max-content;
   width: max-content;
   background-color: black;
-  height: 45px;
-  width: 80px;
+  height: 40px;
+  width: 120px;
 }
-.sections picture div:active {
+.first-section #picture div span {
+  height: inherit;
+  width: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.first-section #picture div span:active {
   background-color: #a1a1a1;
 }
-.sections picture div hr {
+.first-section #picture div #change-img-left {
+  background-image: url("../images/icon-angle-left.svg");
+}
+.first-section #picture div #change-img-right {
+  background-image: url("../images/icon-angle-right.svg");
+}
+.first-section #picture div hr {
   height: 100%;
   background-color: white;
 }
-.sections .second-img {
-  background-image: url("../../images/image-about-dark.jpg");
-}
-.sections .third-img {
-  background-image: url("../../images/image-about-light.jpg");
-}
-.sections .text-container {
-  display: grid;
-  grid-template-rows: auto;
-  padding: 20px;
-}
-.sections .text-container h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: black;
-  margin-bottom: 30px;
-}
-.sections .text-container p {
-  font-size: 1.5rem;
-  color: #454545;
-  margin-bottom: 10px;
-  height: 126px;
-}
-.sections .text-container .shop-div {
+.first-section .text-container .shop-div {
   display: flex;
-  margin-bottom: 30px;
   align-items: center;
   justify-content: left;
   gap: 10px;
   padding-left: 30px;
 }
-.sections .text-container .shop-div a {
+.first-section .text-container .shop-div a {
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: 5px;
   text-decoration: none;
   color: black;
 }
-.sections .text-container .shop-div a:active {
+.first-section .text-container .shop-div a:active {
   color: #a1a1a1;
 }
 
-.back-img1 {
-  background-image: url("../.././images/mobile-image-hero-1.jpg");
+.second-section .text-container {
+  height: auto;
 }
-
-.back-img2 {
-  background-image: url("../.././images/mobile-image-hero-2.jpg");
+.second-section .second-img {
+  background-image: url("../images/image-about-dark.jpg");
 }
-
-.back-img3 {
-  background-image: url("../.././images/mobile-image-hero-3.jpg");
+.second-section .third-img {
+  background-image: url("../images/image-about-light.jpg");
 }
 
 footer {
@@ -205,7 +217,7 @@ footer .attribution a {
   }
   body main .sections .text-container {
     padding: 50px;
-    max-height: 380px;
+    height: inherit;
   }
   body main .sections picture {
     height: auto;
@@ -213,6 +225,7 @@ footer .attribution a {
   body main .first-section {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    height: 390px;
   }
   body main .first-section #picture div {
     width: 11.5vw;
@@ -222,14 +235,15 @@ footer .attribution a {
   body main .second-section {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
+    height: 250px;
   }
   body main .back-img1 {
-    background-image: url("../.././images/desktop-image-hero-1.jpg");
+    background-image: url("../images/desktop-image-hero-1.jpg");
   }
   body main .back-img2 {
-    background-image: url("../.././images/desktop-image-hero-2.jpg");
+    background-image: url("../images/desktop-image-hero-2.jpg");
   }
   body main .back-img3 {
-    background-image: url("../.././images/desktop-image-hero-3.jpg");
+    background-image: url("../images/desktop-image-hero-3.jpg");
   }
 }
