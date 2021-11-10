@@ -113,10 +113,10 @@ header .list-desktop {
   background-color: white;
 }
 .sections .second-img {
-  background-image: url("../../images/image-about-dark.jpg");
+  background-image: url("../images/image-about-dark.jpg");
 }
 .sections .third-img {
-  background-image: url("../../images/image-about-light.jpg");
+  background-image: url("../images/image-about-light.jpg");
 }
 .sections .text-container {
   display: grid;
