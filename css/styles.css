@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Spartan";
+  min-width: 375px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  justify-content: left;
+  position: absolute;
+  z-index: 1;
+}
+header .btn-menu__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+  position: relative;
+}
+header .btn-menu__container h1 {
+  display: none;
+}
+header .btn-menu__container .bx {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  font-size: 50px;
+  height: 100%;
+  display: flex;
+}
+header .btn-menu__container .bx-menu {
+  color: white;
+}
+header .btn-menu__container .bx-x {
+  color: #a1a1a1;
+  background-color: white;
+}
+header .list-disable {
+  display: none;
+}
+header .list,
+header .list-desktop {
+  display: flex;
+  color: #a1a1a1;
+  background-color: white;
+  height: 100%;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  margin-top: 20px;
+}
+header .list li,
+header .list-desktop li {
+  display: block;
+  margin-inline: 15px;
+  text-transform: lowercase;
+}
+header .list li:active,
+header .list-desktop li:active {
+  text-decoration: underline;
+}
+header .list li a,
+header .list-desktop li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
+}
+header .list-desktop {
+  display: none;
+}
+
+.sections {
+  max-width: 100vw;
+  z-index: 0;
+}
+.sections picture {
+  display: block;
+  position: relative;
+  height: 390px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sections picture div {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: -webkit-max-content;
+  width: max-content;
+  background-color: black;
+  height: 45px;
+  width: 80px;
+}
+.sections picture div:active {
+  background-color: #a1a1a1;
+}
+.sections picture div hr {
+  height: 100%;
+  background-color: white;
+}
+.sections .second-img {
+  background-image: url("../../images/image-about-dark.jpg");
+}
+.sections .third-img {
+  background-image: url("../../images/image-about-light.jpg");
+}
+.sections .text-container {
+  display: grid;
+  grid-template-rows: auto;
+  padding: 20px;
+}
+.sections .text-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 30px;
+}
+.sections .text-container p {
+  font-size: 1.5rem;
+  color: #454545;
+  margin-bottom: 10px;
+  height: 126px;
+}
+.sections .text-container .shop-div {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  padding-left: 30px;
+}
+.sections .text-container .shop-div a {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-decoration: none;
+  color: black;
+}
+.sections .text-container .shop-div a:active {
+  color: #a1a1a1;
+}
+
+.back-img1 {
+  background-image: url("../.././images/mobile-image-hero-1.jpg");
+}
+
+.back-img2 {
+  background-image: url("../.././images/mobile-image-hero-2.jpg");
+}
+
+.back-img3 {
+  background-image: url("../.././images/mobile-image-hero-3.jpg");
+}
+
+footer {
+  background-color: #a1a1a1;
+}
+footer .attribution {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 5px;
+}
+footer .attribution a {
+  color: #3e52a3;
+}
+
+@media only screen and (min-width: 1024px) {
+  body header .btn-menu__container {
+    width: auto;
+  }
+  body header .btn-menu__container .bx {
+    display: none;
+  }
+  body header .btn-menu__container h1 {
+    display: block;
+    font-size: 2.5rem;
+    margin: 15px 40px 0 10px;
+    color: white;
+  }
+  body header .list-desktop {
+    display: flex;
+    background-color: transparent;
+  }
+  body header .list-desktop li a {
+    color: white;
+  }
+  body main {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    height: auto;
+  }
+  body main .sections .text-container {
+    padding: 50px;
+    max-height: 380px;
+  }
+  body main .sections picture {
+    height: auto;
+  }
+  body main .first-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  body main .first-section #picture div {
+    width: 11.5vw;
+    right: -11.5vw;
+    justify-content: space-around;
+  }
+  body main .second-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+  body main .back-img1 {
+    background-image: url("../.././images/desktop-image-hero-1.jpg");
+  }
+  body main .back-img2 {
+    background-image: url("../.././images/desktop-image-hero-2.jpg");
+  }
+  body main .back-img3 {
+    background-image: url("../.././images/desktop-image-hero-3.jpg");
+  }
+}

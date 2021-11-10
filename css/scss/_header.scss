@@ -1,0 +1,80 @@
+header {
+    display        : flex;
+    align-items    : center;
+    height         : 50px;
+    width          : 100%;
+    justify-content: left;
+    position       : absolute;
+    z-index        : 1;
+
+    .btn-menu__container {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        height         : 100%;
+        width          : 50px;
+        position       : relative;
+
+        h1 {
+            display: none;
+        }
+
+        .bx {
+            position : absolute;
+            top      : 10px;
+            left     : 0px;
+            font-size: 50px;
+            height   : 100%;
+            display  : flex;
+        }
+
+        .bx-menu {
+            color: $color-Whit;
+
+        }
+
+        .bx-x {
+            color           : $color-Dark-Gray;
+            background-color: $color-Whit;
+
+        }
+
+    }
+
+    .list-disable {
+        display: none;
+
+    }
+
+    .list,
+    .list-desktop {
+        display         : flex;
+        color           : $color-Dark-Gray;
+        background-color: $color-Whit;
+        height          : 100%;
+        align-items     : center;
+        border-radius   : 0 15px 15px 0;
+        margin-top      : 20px;
+
+        li {
+            display       : block;
+            margin-inline : 15px;
+            text-transform: lowercase;
+
+            &:active {
+                text-decoration: underline;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight    : $font-weight3;
+                font-size      : $font-size;
+                color          : $color-Black;
+            }
+        }
+    }
+
+    .list-desktop {
+        display: none;
+    }
+}

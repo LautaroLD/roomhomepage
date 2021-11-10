@@ -1,0 +1,84 @@
+body {
+    @include respond-to (1024px) {
+        header {
+            .btn-menu__container {
+                width: auto;
+
+                .bx {
+                    display: none;
+                }
+
+                h1 {
+                    display  : block;
+                    font-size: $font-size-title;
+                    margin   : 15px 40px 0 10px;
+                    color    : $color-Whit;
+                }
+            }
+
+            .list-desktop {
+                display         : flex;
+                background-color: transparent;
+
+                // margin: 0;
+                li {
+                    a {
+                        color: $color-Whit;
+
+                    }
+                }
+            }
+        }
+
+
+        main {
+            display           : grid;
+            grid-template-rows: 1fr .5fr;
+            height            : auto;
+
+            .sections {
+                .text-container {
+                    padding: 50px;
+                    max-height: 380px;
+                }
+
+                picture {
+                    height: auto;
+                }
+            }
+
+            .first-section {
+                display              : grid;
+                grid-template-columns: 1.5fr 1fr;
+
+                #picture {
+                    div {
+                        width          : 11.5vw;
+                        right          : -11.5vw;
+                        justify-content: space-around;
+                    }
+                }
+
+            }
+
+            .second-section {
+                display                     : grid;
+                grid-template-columns       : 1fr 1.5fr 1fr;
+                // min-height               : 300px;
+
+            }
+
+            .back-img1 {
+                background-image: url('../.././images/desktop-image-hero-1.jpg');
+            }
+
+            .back-img2 {
+                background-image: url('../.././images/desktop-image-hero-2.jpg');
+            }
+
+            .back-img3 {
+                background-image: url('../.././images/desktop-image-hero-3.jpg');
+            }
+        }
+    }
+}
