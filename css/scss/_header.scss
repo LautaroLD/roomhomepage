@@ -1,11 +1,12 @@
 header {
     display        : flex;
     align-items    : center;
-    height         : 50px;
+    height         : 60px;
     width          : 100%;
     justify-content: left;
     position       : absolute;
     z-index        : 1;
+    padding        : 20px 0 0 0;
 
     .btn-menu__container {
         display        : flex;
@@ -13,19 +14,16 @@ header {
         align-items    : center;
         height         : 100%;
         width          : 50px;
-        position       : relative;
 
         h1 {
             display: none;
         }
 
         .bx {
-            position : absolute;
-            top      : 10px;
-            left     : 0px;
-            font-size: 50px;
-            height   : 100%;
-            display  : flex;
+            font-size  : 55px;
+            height     : 100%;
+            display    : flex;
+            align-items: center;
         }
 
         .bx-menu {
@@ -36,7 +34,6 @@ header {
         .bx-x {
             color           : $color-Dark-Gray;
             background-color: $color-Whit;
-
         }
 
     }
@@ -54,7 +51,6 @@ header {
         height          : 100%;
         align-items     : center;
         border-radius   : 0 15px 15px 0;
-        margin-top      : 20px;
 
         li {
             display       : block;

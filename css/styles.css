@@ -14,11 +14,12 @@ html {
 header {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 60px;
   width: 100%;
   justify-content: left;
   position: absolute;
   z-index: 1;
+  padding: 20px 0 0 0;
 }
 header .btn-menu__container {
   display: flex;
@@ -26,18 +27,15 @@ header .btn-menu__container {
   align-items: center;
   height: 100%;
   width: 50px;
-  position: relative;
 }
 header .btn-menu__container h1 {
   display: none;
 }
 header .btn-menu__container .bx {
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  font-size: 50px;
+  font-size: 55px;
   height: 100%;
   display: flex;
+  align-items: center;
 }
 header .btn-menu__container .bx-menu {
   color: white;
@@ -57,7 +55,6 @@ header .list-desktop {
   height: 100%;
   align-items: center;
   border-radius: 0 15px 15px 0;
-  margin-top: 20px;
 }
 header .list li,
 header .list-desktop li {
@@ -106,7 +103,7 @@ header .list-desktop {
 .sections .text-container p {
   font-size: 1.2rem;
   color: #454545;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .first-section .back-img1 {
@@ -182,14 +179,26 @@ footer {
   background-color: #a1a1a1;
 }
 footer .attribution {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
   padding: 5px;
+  font-weight: 700;
 }
 footer .attribution a {
   color: #3e52a3;
 }
 
+@media only screen and (min-width: 768px) {
+  body .first-section .back-img1 {
+    background-image: url("../images/desktop-image-hero-1.jpg");
+  }
+  body .first-section .back-img2 {
+    background-image: url("../images/desktop-image-hero-2.jpg");
+  }
+  body .first-section .back-img3 {
+    background-image: url("../images/desktop-image-hero-3.jpg");
+  }
+}
 @media only screen and (min-width: 1024px) {
   body header .btn-menu__container {
     width: auto;

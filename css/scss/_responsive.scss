@@ -1,4 +1,20 @@
 body {
+    @include respond-to (768px) {
+        .first-section {
+            .back-img1 {
+                background-image: url('../images/desktop-image-hero-1.jpg');
+            }
+
+            .back-img2 {
+                background-image: url('../images/desktop-image-hero-2.jpg');
+            }
+
+            .back-img3 {
+                background-image: url('../images/desktop-image-hero-3.jpg');
+            }
+        }
+    }
+
     @include respond-to (1024px) {
         header {
             .btn-menu__container {
@@ -38,19 +54,19 @@ body {
 
             .sections {
                 .text-container {
-                    padding   : 50px;
-                    height: inherit;
+                    padding: 50px;
+                    height : inherit;
                 }
-                
+
                 picture {
                     height: auto;
                 }
             }
-            
+
             .first-section {
                 display              : grid;
                 grid-template-columns: 1.5fr 1fr;
-                height: 390px;
+                height               : 390px;
 
                 #picture {
                     div {
@@ -63,9 +79,9 @@ body {
             }
 
             .second-section {
-                display                     : grid;
-                grid-template-columns       : 1fr 1.5fr 1fr;
-                height: 250px;
+                display              : grid;
+                grid-template-columns: 1fr 1.5fr 1fr;
+                height               : 250px;
             }
 
             .back-img1 {

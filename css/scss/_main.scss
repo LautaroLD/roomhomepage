@@ -17,16 +17,16 @@
         gap               : 20px;
 
         h2 {
-            font-size        : $font-size-title;
-            font-weight      : $font-weight3;
-            color            : $color-Black;
-            text-transform   : uppercase;
+            font-size     : $font-size-title;
+            font-weight   : $font-weight3;
+            color         : $color-Black;
+            text-transform: uppercase;
         }
 
         p {
-            font-size: $font-size;
-            color    : $color-Very-Dark-Gray;
-            font-weight: $font-weight1;
+            font-size  : $font-size;
+            color      : $color-Very-Dark-Gray;
+            font-weight: $font-weight2;
         }
 
 
@@ -89,11 +89,11 @@
 
     .text-container {
         .shop-div {
-            display           : flex;
-            align-items       : center;
-            justify-content   : left;
-            gap               : 10px;
-            padding-left      : 30px;
+            display        : flex;
+            align-items    : center;
+            justify-content: left;
+            gap            : 10px;
+            padding-left   : 30px;
 
 
             a {
@@ -110,9 +110,6 @@
         }
     }
 }
-
-
-
 
 .second-section {
     .text-container {

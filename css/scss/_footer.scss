@@ -1,9 +1,10 @@
 footer {
     background-color: $color-Dark-Gray;
     .attribution {
-        font-size : 1.3rem;
+        font-size : $font-size;
         text-align: center;
         padding: 5px;
+        font-weight: $font-weight3;
     }
     
     .attribution a {
