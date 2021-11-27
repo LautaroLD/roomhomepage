@@ -209,12 +209,13 @@ footer .attribution a {
   body header .btn-menu__container h1 {
     display: block;
     font-size: 2.5rem;
-    margin: 15px 40px 0 10px;
+    margin: 0px 40px 0 10px;
     color: white;
   }
   body header .list-desktop {
     display: flex;
     background-color: transparent;
+    padding-top: 5px;
   }
   body header .list-desktop li a {
     color: white;

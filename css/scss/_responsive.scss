@@ -27,7 +27,7 @@ body {
                 h1 {
                     display  : block;
                     font-size: $font-size-title;
-                    margin   : 15px 40px 0 10px;
+                    margin   : 0px 40px 0 10px;
                     color    : $color-Whit;
                 }
             }
@@ -35,8 +35,7 @@ body {
             .list-desktop {
                 display         : flex;
                 background-color: transparent;
-
-                // margin: 0;
+                padding-top: 5px;
                 li {
                     a {
                         color: $color-Whit;
